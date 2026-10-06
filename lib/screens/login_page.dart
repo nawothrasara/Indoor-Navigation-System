@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-import 'home_page.dart';
+import 'setup_place_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
   void _continueAsGuest(BuildContext context) {
-    Navigator.of(context).pushReplacement(
-      MaterialPageRoute(builder: (_) => const HomePage()),
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (_) => const SetupPlacePage()),
     );
   }
 
